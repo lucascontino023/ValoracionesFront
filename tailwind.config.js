@@ -4,7 +4,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    opacity: ({ after }) => after(['disabled'])
+    extend: {
+      borderColor: ['focus-visible'],
+      opacity: ['disabled'],
+    }
   },
   plugins: [],
 }
